@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/admin.css"/>
+	</head>
+
+	<body>
+		<!--大标题信息-->
+		<div class="container">
+			<h3>百度新闻后台管理器</h3>
+			<div class="row">
+				<!--信息提交处-->
+				<div class="col-lg-6">
+					<div class="ys1">
+						<h4>新闻发布器</h4>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">新闻标题</label>
+								<input type="text" class="form-control" id="newsTitle" placeholder="请输入新闻标题">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">新闻内容</label>
+								<textarea rows="3" class="form-control" id="newsContent"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">新闻图片地址</label>
+								<input type="url" class="form-control" id="newsImg" placeholder="请输入新闻图片网址">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">新闻来源</label>
+								<input type="url" class="form-control" id="newsSrc" placeholder="请输入新闻来源">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">新闻日期</label>
+								<input type="text" id="newsDate" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">新闻标签</label>
+								<select name="" class="form-control" id="newsTip">
+									<option value="推荐">推荐</option>
+									<option value="百家">百家</option>
+									<option value="社会">社会</option>
+									<option value="军事">军事</option>
+									<option value="娱乐">娱乐</option>
+									<option value="影视">影视</option>
+									<option value="国际">国际</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-info" id="insert">提交</button>
+						</form>
+					</div>
+				</div>
+				<!--信息展示处-->
+				<div class="col-lg-6">
+					<div class="ys2">
+						<h4>新闻列表</h4>
+						<div class="imfo">
+							<table class="table">
+								<tr>
+									<td class="table-imfo">ID</td>
+									<td class="table-imfo">新闻标题</td>
+									<td class="table-imfo">新闻时间</td>
+									<td class="table-imfo">操作</td>
+								</tr>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src='/jquery/dist/jquery.min.js'></script>
+	<script type="text/javascript" src='/moment/min/moment.min.js'></script>
+	<script type="text/javascript" src="javascripts/admin.js"></script>
+
+</html>
